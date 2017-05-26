@@ -1,13 +1,16 @@
-body, html {
-  height: 90%;
+html {
+  height: 100%;
 }
 
 body{
   margin: 0px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-
   font-family: Arial;
   text-align: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: -2px 0px 4px grey, 0px 2px 4px grey, 2px 0px 4px grey, 0px -2px 4px grey;
 }
 
 
@@ -19,16 +22,44 @@ body{
 }
 
 .temp {
-  font-size: 80px;
-  background-color: white;
-  width: 225px;
-  padding: 0;
-  margin: 15% auto 20px auto;
-  border-radius: 10px;
+  font-size: 160px;
+  margin: 8% auto 20px auto;
+  text-shadow: -2px 0px 4px grey, 0px 2px 4px grey, 2px 0px 4px grey, 0px -2px 4px grey;
+}
 
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";       /* IE 8 */
-  filter: alpha(opacity=55);  /* IE 5-7 */
-  -moz-opacity: 0.5;          /* Netscape */
-  -khtml-opacity: 0.5;        /* Safari 1.x */
-  opacity: 0.5;
+.transparent {
+
+  background-color: white;
+  border-radius:3px;
+  padding: 10px 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.wrap{
+height:auto;
+width:500px;
+margin: auto;
+}
+
+.city{
+float:left;
+width:60%;
+height:100%;
+}
+.sky{
+height:100%;
+margin-left:62%;
+}
+
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
 }

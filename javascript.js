@@ -46,6 +46,10 @@ $.ajax({
       var tempMax = json.main.temp_max
       var weatherDes = json.weather[0].main
 
+      if (weatherDes === "Haze" || weatherDes === "Mist") {
+        weatherDes = "Partly Cloudy";
+      }
+
       $(".temp").html(temp + " " + String.fromCharCode(176) + "F")
       $(".sky").html(weatherDes)
     })
