@@ -5,8 +5,7 @@ html {
 body{
 
   margin: 0px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+
   font-family: Arial;
   text-align: center;
   font-weight: bold;
@@ -63,4 +62,8 @@ footer {
   bottom: 0;
   left: 0;
   padding: 10px;
+}
+
+.changetemp:hover {
+  cursor: pointer;
 }

@@ -53,6 +53,20 @@ $.ajax({
       $(".temp").html(temp + " " + String.fromCharCode(176) + "F")
       $(".sky").html(weatherDes)
 
+      $(".changetemp").click(function() {
+
+        if (temp === Math.round(json.main.temp)) {
+          temp = Math.round((json.main.temp-32)*0.5556);
+          $(".changetemp").html('Change to Fahrenheit')
+          $(".temp").html(temp + " " + String.fromCharCode(176) + "C")
+        } else {
+          temp = Math.round(json.main.temp)
+          $(".changetemp").html('Change to Celsius')
+          $(".temp").html(temp + " " + String.fromCharCode(176) + "F")
+        }
+      })
+
+
 
       if (temp>=80) {
         $("body").css({
