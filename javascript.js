@@ -52,6 +52,37 @@ $.ajax({
 
       $(".temp").html(temp + " " + String.fromCharCode(176) + "F")
       $(".sky").html(weatherDes)
+
+
+      if (temp>=80) {
+        $("body").css({
+          'background': 'url("images/hot.jpg")',
+          'background-size': '100% 100%',
+          'background-repeat': 'no-repeat'
+
+        })
+      }
+
+      if (temp>50 && temp <80) {
+        // change to normal background
+        $("body").css({
+          'background': 'url("images/background.jpg")',
+          'background-size': '100% 100%',
+          'background-repeat': 'no-repeat'
+        })
+      }
+
+      if (temp<=50) {
+        $("body").css({
+          'background': 'url("images/cold.jpg")',
+          'background-size': '100% 100%',
+          'background-repeat': 'no-repeat'
+        })
+
+
+      }
+
+
     })
   }
 });
