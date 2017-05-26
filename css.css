@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+}
+
+body{
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  font-family: Arial;
+  text-align: center;
+}
+
+
+.header {
+  font-size: 40px;
+  padding: 30px;
+  margin-top: 20px;
+  color: white;
+}
+
+.temp {
+  font-size: 80px;
+  background-color: white;
+  width: 225px;
+  padding: 0;
+  margin: 15% auto 20px auto;
+  border-radius: 10px;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";       /* IE 8 */
+  filter: alpha(opacity=55);  /* IE 5-7 */
+  -moz-opacity: 0.5;          /* Netscape */
+  -khtml-opacity: 0.5;        /* Safari 1.x */
+  opacity: 0.5;
+}
